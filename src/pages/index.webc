@@ -1,7 +1,12 @@
 ---
   layout: base-layout.webc
-  title: Home
+  title: 11ty Digital Ocean Markdown Test
 ---
 
-  <h1 @html="title"></h1>
-  Cool content goes here!
+<h1 @html="title"></h1>
+
+<p>
+  This site is for testing the 11ty Digital Ocean Markdown-it plugin pack rendering. 
+</p>
+
+<a href="/markdown">Digital Oceans demo page</a>

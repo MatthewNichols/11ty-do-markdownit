@@ -1,4 +1,5 @@
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
+const doMarkdownIt = require("@digitalocean/do-markdownit");
 
 // If you have short codes
 //const registerShortCodes = require("./src/short-codes/");
@@ -23,6 +24,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginWebc);
   
+  // configure markdown-it
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    mdLib.use(doMarkdownIt, {});
+  });
+
   // If you have short codes
   //registerShortCodes(eleventyConfig);
     
