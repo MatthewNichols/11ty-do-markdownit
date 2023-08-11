@@ -1,0 +1,7 @@
+---
+  layout: base-layout.webc
+  title: Home
+---
+
+  <h1 @html="title"></h1>
+  Cool content goes here!
